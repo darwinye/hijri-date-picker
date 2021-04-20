@@ -171,7 +171,8 @@ class HijriDatePicker extends Component {
           </Reference>
           {this.state.calenderShown &&
             <Popper
-              placement="bottom"
+              placement="auto-end"
+              positionFixed={true}
               modifiers={{
                 hide: { enabled: true},
                 preventOverflow: { enabled: true, boundariesElement: 'viewport'}, 
